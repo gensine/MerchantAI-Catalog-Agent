@@ -1,0 +1,16 @@
+product_id,product_name,description,price_inr,category,stock_quantity,sizes,colors,cod_available,dispatch_time
+P001,Indigo Cotton Chikankari Kurta,Handcrafted breathable cotton kurta with authentic Lucknow chikankari embroidery,1299,Apparel,25,"S,M,L,XL",Indigo Blue,true,Same-day
+P002,Slim Fit Denim Jacket,Classic washed blue denim jacket with durable copper hardware and twin chest pockets,2499,Apparel,15,"M,L,XL",Washed Blue,true,1-2 business days
+P003,Handloom Silk Saree with Blouse Piece,Pure Chanderi silk saree with zari border and contrast unstitched blouse piece,4999,Apparel,8,Free Size,Emerald Green,false,1-2 business days
+P004,Ergonomic Wireless Optical Mouse,2.4GHz low latency wireless mouse with silent click switches and 18-month battery life,799,Electronics,50,N/A,Matte Black,true,Same-day
+P005,Noise Cancelling Bluetooth Headphones,Over-ear wireless headphones with active noise cancellation and 40h playtime,3999,Electronics,12,N/A,Midnight Blue,true,1-2 business days
+P006,Organic Assam CTC Black Tea 500g,Single-estate vacuum packed rich aromatic tea leaves perfect for morning chai,450,Groceries,100,500g,Natural,true,Same-day
+P007,Stainless Steel Insulated Water Bottle 1L,Double wall vacuum insulated flask that keeps beverages hot for 12h or cold for 24h,899,Home & Kitchen,30,1000ml,Silver Chrome,true,Same-day
+P008,Handmade Ceramic Coffee Mug Set of 2,Microwave and dishwasher safe artisan crafted ceramic mugs (350ml each),699,Home & Kitchen,0,"Set of 2",Speckled Beige,true,1-2 business days
+P009,Running Sports Shoes Lightweight,Breathable mesh upper with cushioned EVA foam sole for outdoor jogging,1899,Footwear,18,"7,8,9,10,11",Charcoal Grey,true,Same-day
+P010,Leather Bi-fold RFID Wallet,Genuine top-grain leather slim wallet with RFID blocking layer and 8 card slots,1199,Accessories,40,N/A,Tan Brown,true,Same-day
+P011,Smart Fitness Tracker Band 5,1.1 inch AMOLED touch display with heart rate blood oxygen monitoring and 14-day battery,1999,Electronics,22,N/A,Black,true,Same-day
+P012,Linen Casual Half Sleeve Shirt,100% pure European linen casual button-down shirt ideal for summer heat,1599,Apparel,14,"S,M,L,XL",Pastel Pink,true,Same-day
+P013,Cold Pressed Virgin Coconut Oil 1L,Unrefined extra virgin coconut oil extracted from fresh coconut milk,650,Groceries,45,1L,Clear,true,1-2 business days
+P014,Mechanical Gaming Keyboard RGB,Tenkeyless compact mechanical keyboard with tactile blue switches and custom lighting,2999,Electronics,10,N/A,White RGB,true,1-2 business days
+P015,Hand-poured Soy Wax Scented Candle,Infused with lavender and vanilla essential oils in reusable glass jar,499,Home & Kitchen,35,250g,Warm Vanilla,true,Same-day

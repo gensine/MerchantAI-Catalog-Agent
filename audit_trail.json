@@ -1,0 +1,1782 @@
+[
+  {
+    "event_id": "evt_1788631013439",
+    "timestamp": "2026-09-05T17:56:53.439850Z",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "QUERY",
+    "tool_name": "search_catalog",
+    "reasoning": "Agent executed catalog query for 'Order 1 Indigo Cotton Chikankari Kurta for me'. Found 0 matches.",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "query": "Order 1 Indigo Cotton Chikankari Kurta for me",
+      "max_results": 3
+    },
+    "outputs": {
+      "match_count": 0,
+      "top_matches": []
+    }
+  },
+  {
+    "event_id": "evt_1788631013441",
+    "timestamp": "2026-09-05T17:56:53.441859Z",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "AGENT_DECISION",
+    "tool_name": "process_intent",
+    "reasoning": "No product matches found in catalog. Terminated purchase workflow gracefully.",
+    "status": "NO_MATCH",
+    "inputs": {
+      "intent": "Order 1 Indigo Cotton Chikankari Kurta for me"
+    },
+    "outputs": {
+      "matched": false
+    }
+  },
+  {
+    "event_id": "evt_1788631013951",
+    "timestamp": "2026-09-05T17:56:53.951133Z",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "QUERY",
+    "tool_name": "search_catalog",
+    "reasoning": "Agent executed catalog query for 'Buy Ceramic Coffee Mug Set of 2'. Found 0 matches.",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "query": "Buy Ceramic Coffee Mug Set of 2",
+      "max_results": 3
+    },
+    "outputs": {
+      "match_count": 0,
+      "top_matches": []
+    }
+  },
+  {
+    "event_id": "evt_1788631013974",
+    "timestamp": "2026-09-05T17:56:53.974689Z",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "AGENT_DECISION",
+    "tool_name": "process_intent",
+    "reasoning": "No product matches found in catalog. Terminated purchase workflow gracefully.",
+    "status": "NO_MATCH",
+    "inputs": {
+      "intent": "Buy Ceramic Coffee Mug Set of 2"
+    },
+    "outputs": {
+      "matched": false
+    }
+  },
+  {
+    "event_id": "evt_1788631014084",
+    "timestamp": "2026-09-05T17:56:54.084135Z",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "QUERY",
+    "tool_name": "search_catalog",
+    "reasoning": "Agent executed catalog query for 'headphones noise cancelling'. Found 0 matches.",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "query": "headphones noise cancelling",
+      "max_results": 3
+    },
+    "outputs": {
+      "match_count": 0,
+      "top_matches": []
+    }
+  },
+  {
+    "event_id": "evt_1788631014111",
+    "timestamp": "2026-09-05T17:56:54.111978Z",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "AVAILABILITY_CHECK",
+    "tool_name": "check_availability",
+    "reasoning": "Product lookup returned 404 Not Found",
+    "status": "NOT_FOUND",
+    "inputs": {
+      "product_id": "P001"
+    },
+    "outputs": {
+      "product_id": "P001",
+      "name": "Unknown",
+      "available": false,
+      "stock": 0,
+      "message": "Product ID 'P001' not found in merchant catalog."
+    }
+  },
+  {
+    "event_id": "evt_1788631075186",
+    "timestamp": "2026-09-05T17:57:55.186601Z",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "QUERY",
+    "tool_name": "search_catalog",
+    "reasoning": "Agent executed catalog query for 'Order 1 Indigo Cotton Chikankari Kurta for me'. Found 3 matches.",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "query": "Order 1 Indigo Cotton Chikankari Kurta for me",
+      "max_results": 3
+    },
+    "outputs": {
+      "match_count": 3,
+      "top_matches": [
+        "Indigo Cotton Chikankari Kurta",
+        "Stainless Steel Insulated Water Bottle 1L",
+        "Mechanical Gaming Keyboard RGB"
+      ]
+    }
+  },
+  {
+    "event_id": "evt_1788631075188",
+    "timestamp": "2026-09-05T17:57:55.188396Z",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "AVAILABILITY_CHECK",
+    "tool_name": "check_availability",
+    "reasoning": "Verified availability for Indigo Cotton Chikankari Kurta: True (Stock: 25)",
+    "status": "SUCCESS",
+    "inputs": {
+      "product_id": "P001"
+    },
+    "outputs": {
+      "product_id": "P001",
+      "name": "Indigo Cotton Chikankari Kurta",
+      "available": true,
+      "stock": 25,
+      "price": 1299.0,
+      "variants": {
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "colors": [
+          "Indigo Blue"
+        ]
+      },
+      "cod_available": true,
+      "message": "Item 'Indigo Cotton Chikankari Kurta' is in stock (25 units available)."
+    }
+  },
+  {
+    "event_id": "evt_1788631075212",
+    "timestamp": "2026-09-05T17:57:55.212702Z",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "CHECKOUT",
+    "tool_name": "initiate_checkout",
+    "reasoning": "Initiated Razorpay test checkout for 1x Indigo Cotton Chikankari Kurta = \u20b91299.00",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "product_id": "P001",
+      "quantity": 1,
+      "buyer_name": "AI Buyer",
+      "buyer_email": "test_buyer@agent.ai"
+    },
+    "outputs": {
+      "order_id": "order_test_045bd1f1c80d",
+      "amount": 1299.0,
+      "payment_link": "https://checkout.razorpay.com/v1/checkout/test/order_test_045bd1f1c80d"
+    }
+  },
+  {
+    "event_id": "evt_1788631075234",
+    "timestamp": "2026-09-05T17:57:55.234458Z",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "ORDER_STATUS_POLL",
+    "tool_name": "get_order_status",
+    "reasoning": "Polled Razorpay order status for order_test_045bd1f1c80d: paid",
+    "status": "SUCCESS",
+    "inputs": {
+      "order_id": "order_test_045bd1f1c80d"
+    },
+    "outputs": {
+      "order_id": "order_test_045bd1f1c80d",
+      "status": "paid",
+      "amount_paid": 1299.0,
+      "paid": true,
+      "mode": "SIMULATED_TEST_CONFIRMATION"
+    }
+  },
+  {
+    "event_id": "evt_1788631075265",
+    "timestamp": "2026-09-05T17:57:55.265731Z",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "QUERY",
+    "tool_name": "search_catalog",
+    "reasoning": "Agent executed catalog query for 'Buy Ceramic Coffee Mug Set of 2'. Found 1 matches.",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "query": "Buy Ceramic Coffee Mug Set of 2",
+      "max_results": 3
+    },
+    "outputs": {
+      "match_count": 1,
+      "top_matches": [
+        "Handmade Ceramic Coffee Mug Set of 2"
+      ]
+    }
+  },
+  {
+    "event_id": "evt_1788631075289",
+    "timestamp": "2026-09-05T17:57:55.289224Z",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "AVAILABILITY_CHECK",
+    "tool_name": "check_availability",
+    "reasoning": "Verified availability for Handmade Ceramic Coffee Mug Set of 2: False (Stock: 0)",
+    "status": "SUCCESS",
+    "inputs": {
+      "product_id": "P008"
+    },
+    "outputs": {
+      "product_id": "P008",
+      "name": "Handmade Ceramic Coffee Mug Set of 2",
+      "available": false,
+      "stock": 0,
+      "price": 699.0,
+      "variants": {
+        "sizes": [
+          "Set of 2"
+        ],
+        "colors": [
+          "Speckled Beige"
+        ]
+      },
+      "cod_available": true,
+      "message": "Item 'Handmade Ceramic Coffee Mug Set of 2' is currently out of stock."
+    }
+  },
+  {
+    "event_id": "evt_1788631075315",
+    "timestamp": "2026-09-05T17:57:55.316031Z",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "AGENT_DECISION",
+    "tool_name": "process_intent",
+    "reasoning": "Primary product out of stock. Agent handled failure mode gracefully.",
+    "status": "OUT_OF_STOCK_HANDLED",
+    "inputs": {
+      "intent": "Buy Ceramic Coffee Mug Set of 2",
+      "product_id": "P008"
+    },
+    "outputs": {
+      "out_of_stock": true,
+      "alternative": null
+    }
+  },
+  {
+    "event_id": "evt_1788631075341",
+    "timestamp": "2026-09-05T17:57:55.341351Z",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "SPEND_GUARDRAIL",
+    "tool_name": "check_spend_limit",
+    "reasoning": "Total order value exceeds auto-approval spending cap",
+    "status": "BLOCKED",
+    "inputs": {
+      "amount": 4999.0,
+      "quantity": 2,
+      "total_value": 9998.0,
+      "cap": 5000.0
+    },
+    "outputs": {
+      "passed": false,
+      "message": "Order total \u20b99998.00 exceeds spend limit cap of \u20b95000.00. Human confirmation required."
+    }
+  },
+  {
+    "event_id": "evt_1788631075416",
+    "timestamp": "2026-09-05T17:57:55.416672Z",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "QUERY",
+    "tool_name": "search_catalog",
+    "reasoning": "Agent executed catalog query for 'headphones noise cancelling'. Found 1 matches.",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "query": "headphones noise cancelling",
+      "max_results": 3
+    },
+    "outputs": {
+      "match_count": 1,
+      "top_matches": [
+        "Noise Cancelling Bluetooth Headphones"
+      ]
+    }
+  },
+  {
+    "event_id": "evt_1788631075433",
+    "timestamp": "2026-09-05T17:57:55.433261Z",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "AVAILABILITY_CHECK",
+    "tool_name": "check_availability",
+    "reasoning": "Verified availability for Indigo Cotton Chikankari Kurta: True (Stock: 25)",
+    "status": "SUCCESS",
+    "inputs": {
+      "product_id": "P001"
+    },
+    "outputs": {
+      "product_id": "P001",
+      "name": "Indigo Cotton Chikankari Kurta",
+      "available": true,
+      "stock": 25,
+      "price": 1299.0,
+      "variants": {
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "colors": [
+          "Indigo Blue"
+        ]
+      },
+      "cod_available": true,
+      "message": "Item 'Indigo Cotton Chikankari Kurta' is in stock (25 units available)."
+    }
+  },
+  {
+    "event_id": "evt_1788631111254",
+    "timestamp": "2026-09-05T17:58:31.254271+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "QUERY",
+    "tool_name": "search_catalog",
+    "reasoning": "Agent executed catalog query for 'Order 1 Indigo Cotton Chikankari Kurta for me'. Found 3 matches.",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "query": "Order 1 Indigo Cotton Chikankari Kurta for me",
+      "max_results": 3
+    },
+    "outputs": {
+      "match_count": 3,
+      "top_matches": [
+        "Indigo Cotton Chikankari Kurta",
+        "Stainless Steel Insulated Water Bottle 1L",
+        "Mechanical Gaming Keyboard RGB"
+      ]
+    }
+  },
+  {
+    "event_id": "evt_1788631111258",
+    "timestamp": "2026-09-05T17:58:31.258499+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "AVAILABILITY_CHECK",
+    "tool_name": "check_availability",
+    "reasoning": "Verified availability for Indigo Cotton Chikankari Kurta: True (Stock: 25)",
+    "status": "SUCCESS",
+    "inputs": {
+      "product_id": "P001"
+    },
+    "outputs": {
+      "product_id": "P001",
+      "name": "Indigo Cotton Chikankari Kurta",
+      "available": true,
+      "stock": 25,
+      "price": 1299.0,
+      "variants": {
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "colors": [
+          "Indigo Blue"
+        ]
+      },
+      "cod_available": true,
+      "message": "Item 'Indigo Cotton Chikankari Kurta' is in stock (25 units available)."
+    }
+  },
+  {
+    "event_id": "evt_1788631111284",
+    "timestamp": "2026-09-05T17:58:31.284537+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "CHECKOUT",
+    "tool_name": "initiate_checkout",
+    "reasoning": "Initiated Razorpay test checkout for 1x Indigo Cotton Chikankari Kurta = \u20b91299.00",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "product_id": "P001",
+      "quantity": 1,
+      "buyer_name": "AI Buyer",
+      "buyer_email": "test_buyer@agent.ai"
+    },
+    "outputs": {
+      "order_id": "order_test_833cd1cdabcb",
+      "amount": 1299.0,
+      "payment_link": "https://checkout.razorpay.com/v1/checkout/test/order_test_833cd1cdabcb"
+    }
+  },
+  {
+    "event_id": "evt_1788631111309",
+    "timestamp": "2026-09-05T17:58:31.309057+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "ORDER_STATUS_POLL",
+    "tool_name": "get_order_status",
+    "reasoning": "Polled Razorpay order status for order_test_833cd1cdabcb: paid",
+    "status": "SUCCESS",
+    "inputs": {
+      "order_id": "order_test_833cd1cdabcb"
+    },
+    "outputs": {
+      "order_id": "order_test_833cd1cdabcb",
+      "status": "paid",
+      "amount_paid": 1299.0,
+      "paid": true,
+      "mode": "SIMULATED_TEST_CONFIRMATION"
+    }
+  },
+  {
+    "event_id": "evt_1788631111339",
+    "timestamp": "2026-09-05T17:58:31.339089+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "QUERY",
+    "tool_name": "search_catalog",
+    "reasoning": "Agent executed catalog query for 'Buy Ceramic Coffee Mug Set of 2'. Found 1 matches.",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "query": "Buy Ceramic Coffee Mug Set of 2",
+      "max_results": 3
+    },
+    "outputs": {
+      "match_count": 1,
+      "top_matches": [
+        "Handmade Ceramic Coffee Mug Set of 2"
+      ]
+    }
+  },
+  {
+    "event_id": "evt_1788631111367",
+    "timestamp": "2026-09-05T17:58:31.367206+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "AVAILABILITY_CHECK",
+    "tool_name": "check_availability",
+    "reasoning": "Verified availability for Handmade Ceramic Coffee Mug Set of 2: False (Stock: 0)",
+    "status": "SUCCESS",
+    "inputs": {
+      "product_id": "P008"
+    },
+    "outputs": {
+      "product_id": "P008",
+      "name": "Handmade Ceramic Coffee Mug Set of 2",
+      "available": false,
+      "stock": 0,
+      "price": 699.0,
+      "variants": {
+        "sizes": [
+          "Set of 2"
+        ],
+        "colors": [
+          "Speckled Beige"
+        ]
+      },
+      "cod_available": true,
+      "message": "Item 'Handmade Ceramic Coffee Mug Set of 2' is currently out of stock."
+    }
+  },
+  {
+    "event_id": "evt_1788631111394",
+    "timestamp": "2026-09-05T17:58:31.394157+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "AGENT_DECISION",
+    "tool_name": "process_intent",
+    "reasoning": "Primary product out of stock. Agent handled failure mode gracefully.",
+    "status": "OUT_OF_STOCK_HANDLED",
+    "inputs": {
+      "intent": "Buy Ceramic Coffee Mug Set of 2",
+      "product_id": "P008"
+    },
+    "outputs": {
+      "out_of_stock": true,
+      "alternative": null
+    }
+  },
+  {
+    "event_id": "evt_1788631111423",
+    "timestamp": "2026-09-05T17:58:31.423184+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "SPEND_GUARDRAIL",
+    "tool_name": "check_spend_limit",
+    "reasoning": "Total order value exceeds auto-approval spending cap",
+    "status": "BLOCKED",
+    "inputs": {
+      "amount": 4999.0,
+      "quantity": 2,
+      "total_value": 9998.0,
+      "cap": 5000.0
+    },
+    "outputs": {
+      "passed": false,
+      "message": "Order total \u20b99998.00 exceeds spend limit cap of \u20b95000.00. Human confirmation required."
+    }
+  },
+  {
+    "event_id": "evt_1788631111504",
+    "timestamp": "2026-09-05T17:58:31.504086+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "QUERY",
+    "tool_name": "search_catalog",
+    "reasoning": "Agent executed catalog query for 'headphones noise cancelling'. Found 1 matches.",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "query": "headphones noise cancelling",
+      "max_results": 3
+    },
+    "outputs": {
+      "match_count": 1,
+      "top_matches": [
+        "Noise Cancelling Bluetooth Headphones"
+      ]
+    }
+  },
+  {
+    "event_id": "evt_1788631111524",
+    "timestamp": "2026-09-05T17:58:31.524398+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "AVAILABILITY_CHECK",
+    "tool_name": "check_availability",
+    "reasoning": "Verified availability for Indigo Cotton Chikankari Kurta: True (Stock: 25)",
+    "status": "SUCCESS",
+    "inputs": {
+      "product_id": "P001"
+    },
+    "outputs": {
+      "product_id": "P001",
+      "name": "Indigo Cotton Chikankari Kurta",
+      "available": true,
+      "stock": 25,
+      "price": 1299.0,
+      "variants": {
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "colors": [
+          "Indigo Blue"
+        ]
+      },
+      "cod_available": true,
+      "message": "Item 'Indigo Cotton Chikankari Kurta' is in stock (25 units available)."
+    }
+  },
+  {
+    "event_id": "evt_1788631254606",
+    "timestamp": "2026-09-05T18:00:54.606985+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "QUERY",
+    "tool_name": "search_catalog",
+    "reasoning": "Agent executed catalog query for 'Find wireless optical mouse under 1000 rupees COD available'. Found 3 matches.",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "query": "Find wireless optical mouse under 1000 rupees COD available",
+      "max_results": 3
+    },
+    "outputs": {
+      "match_count": 3,
+      "top_matches": [
+        "Ergonomic Wireless Optical Mouse",
+        "Stainless Steel Insulated Water Bottle 1L",
+        "Noise Cancelling Bluetooth Headphones"
+      ]
+    }
+  },
+  {
+    "event_id": "evt_1788631254612",
+    "timestamp": "2026-09-05T18:00:54.612129+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "AVAILABILITY_CHECK",
+    "tool_name": "check_availability",
+    "reasoning": "Verified availability for Ergonomic Wireless Optical Mouse: True (Stock: 50)",
+    "status": "SUCCESS",
+    "inputs": {
+      "product_id": "P004"
+    },
+    "outputs": {
+      "product_id": "P004",
+      "name": "Ergonomic Wireless Optical Mouse",
+      "available": true,
+      "stock": 50,
+      "price": 799.0,
+      "variants": {
+        "sizes": [
+          "N/A"
+        ],
+        "colors": [
+          "Matte Black"
+        ]
+      },
+      "cod_available": true,
+      "message": "Item 'Ergonomic Wireless Optical Mouse' is in stock (50 units available)."
+    }
+  },
+  {
+    "event_id": "evt_1788631254767",
+    "timestamp": "2026-09-05T18:00:54.767073+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "CHECKOUT",
+    "tool_name": "initiate_checkout",
+    "reasoning": "Initiated Razorpay test checkout for 1x Ergonomic Wireless Optical Mouse = \u20b9799.00",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "product_id": "P004",
+      "quantity": 1,
+      "buyer_name": "AI Buyer",
+      "buyer_email": "buyer@agentic-commerce.ai"
+    },
+    "outputs": {
+      "order_id": "order_test_35b1641e5eed",
+      "amount": 799.0,
+      "payment_link": "https://checkout.razorpay.com/v1/checkout/test/order_test_35b1641e5eed"
+    }
+  },
+  {
+    "event_id": "evt_1788631254808",
+    "timestamp": "2026-09-05T18:00:54.808887+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "ORDER_STATUS_POLL",
+    "tool_name": "get_order_status",
+    "reasoning": "Polled Razorpay order status for order_test_35b1641e5eed: paid",
+    "status": "SUCCESS",
+    "inputs": {
+      "order_id": "order_test_35b1641e5eed"
+    },
+    "outputs": {
+      "order_id": "order_test_35b1641e5eed",
+      "status": "paid",
+      "amount_paid": 1299.0,
+      "paid": true,
+      "mode": "SIMULATED_TEST_CONFIRMATION"
+    }
+  },
+  {
+    "event_id": "evt_1788631271674",
+    "timestamp": "2026-09-05T18:01:11.674355+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "QUERY",
+    "tool_name": "search_catalog",
+    "reasoning": "Agent executed catalog query for 'Order 1 Indigo Cotton Chikankari Kurta for me'. Found 3 matches.",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "query": "Order 1 Indigo Cotton Chikankari Kurta for me",
+      "max_results": 3
+    },
+    "outputs": {
+      "match_count": 3,
+      "top_matches": [
+        "Indigo Cotton Chikankari Kurta",
+        "Stainless Steel Insulated Water Bottle 1L",
+        "Mechanical Gaming Keyboard RGB"
+      ]
+    }
+  },
+  {
+    "event_id": "evt_1788631271679",
+    "timestamp": "2026-09-05T18:01:11.679776+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "AVAILABILITY_CHECK",
+    "tool_name": "check_availability",
+    "reasoning": "Verified availability for Indigo Cotton Chikankari Kurta: True (Stock: 25)",
+    "status": "SUCCESS",
+    "inputs": {
+      "product_id": "P001"
+    },
+    "outputs": {
+      "product_id": "P001",
+      "name": "Indigo Cotton Chikankari Kurta",
+      "available": true,
+      "stock": 25,
+      "price": 1299.0,
+      "variants": {
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "colors": [
+          "Indigo Blue"
+        ]
+      },
+      "cod_available": true,
+      "message": "Item 'Indigo Cotton Chikankari Kurta' is in stock (25 units available)."
+    }
+  },
+  {
+    "event_id": "evt_1788631271809",
+    "timestamp": "2026-09-05T18:01:11.809635+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "CHECKOUT",
+    "tool_name": "initiate_checkout",
+    "reasoning": "Initiated Razorpay test checkout for 1x Indigo Cotton Chikankari Kurta = \u20b91299.00",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "product_id": "P001",
+      "quantity": 1,
+      "buyer_name": "AI Buyer",
+      "buyer_email": "buyer@agentic-commerce.ai"
+    },
+    "outputs": {
+      "order_id": "order_test_8e8a7730562f",
+      "amount": 1299.0,
+      "payment_link": "https://checkout.razorpay.com/v1/checkout/test/order_test_8e8a7730562f"
+    }
+  },
+  {
+    "event_id": "evt_1788631271861",
+    "timestamp": "2026-09-05T18:01:11.861042+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "ORDER_STATUS_POLL",
+    "tool_name": "get_order_status",
+    "reasoning": "Polled Razorpay order status for order_test_8e8a7730562f: paid",
+    "status": "SUCCESS",
+    "inputs": {
+      "order_id": "order_test_8e8a7730562f"
+    },
+    "outputs": {
+      "order_id": "order_test_8e8a7730562f",
+      "status": "paid",
+      "amount_paid": 1299.0,
+      "paid": true,
+      "mode": "SIMULATED_TEST_CONFIRMATION"
+    }
+  },
+  {
+    "event_id": "evt_1788631537446",
+    "timestamp": "2026-09-05T18:05:37.446690+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "QUERY",
+    "tool_name": "search_catalog",
+    "reasoning": "Agent executed catalog query for 'ORDER 1 INDIOGO CHINKARI KURTA SIZE M'. Found 3 matches.",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "query": "ORDER 1 INDIOGO CHINKARI KURTA SIZE M",
+      "max_results": 3
+    },
+    "outputs": {
+      "match_count": 3,
+      "top_matches": [
+        "Indigo Cotton Chikankari Kurta",
+        "Handloom Silk Saree with Blouse Piece",
+        "Organic Assam CTC Black Tea 500g"
+      ]
+    }
+  },
+  {
+    "event_id": "evt_1788631537463",
+    "timestamp": "2026-09-05T18:05:37.463180+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "AVAILABILITY_CHECK",
+    "tool_name": "check_availability",
+    "reasoning": "Verified availability for Indigo Cotton Chikankari Kurta: True (Stock: 25)",
+    "status": "SUCCESS",
+    "inputs": {
+      "product_id": "P001"
+    },
+    "outputs": {
+      "product_id": "P001",
+      "name": "Indigo Cotton Chikankari Kurta",
+      "available": true,
+      "stock": 25,
+      "price": 1299.0,
+      "variants": {
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "colors": [
+          "Indigo Blue"
+        ]
+      },
+      "cod_available": true,
+      "message": "Item 'Indigo Cotton Chikankari Kurta' is in stock (25 units available)."
+    }
+  },
+  {
+    "event_id": "evt_1788631537521",
+    "timestamp": "2026-09-05T18:05:37.521265+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "IDEMPOTENCY_GUARD",
+    "tool_name": "check_idempotency",
+    "reasoning": "Idempotency guard detected duplicate order attempt in 5 min window",
+    "status": "BLOCKED",
+    "inputs": {
+      "product_id": "P001",
+      "buyer_id": "buyer@agentic-commerce.ai"
+    },
+    "outputs": {
+      "passed": false,
+      "message": "Duplicate checkout detected for item P001. Please wait 34 seconds before re-ordering."
+    }
+  },
+  {
+    "event_id": "evt_1788631546027",
+    "timestamp": "2026-09-05T18:05:46.027075+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "QUERY",
+    "tool_name": "search_catalog",
+    "reasoning": "Agent executed catalog query for 'Order 1 Indigo Cotton Chikankari Kurta for me'. Found 3 matches.",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "query": "Order 1 Indigo Cotton Chikankari Kurta for me",
+      "max_results": 3
+    },
+    "outputs": {
+      "match_count": 3,
+      "top_matches": [
+        "Indigo Cotton Chikankari Kurta",
+        "Stainless Steel Insulated Water Bottle 1L",
+        "Mechanical Gaming Keyboard RGB"
+      ]
+    }
+  },
+  {
+    "event_id": "evt_1788631546036",
+    "timestamp": "2026-09-05T18:05:46.036786+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "AVAILABILITY_CHECK",
+    "tool_name": "check_availability",
+    "reasoning": "Verified availability for Indigo Cotton Chikankari Kurta: True (Stock: 25)",
+    "status": "SUCCESS",
+    "inputs": {
+      "product_id": "P001"
+    },
+    "outputs": {
+      "product_id": "P001",
+      "name": "Indigo Cotton Chikankari Kurta",
+      "available": true,
+      "stock": 25,
+      "price": 1299.0,
+      "variants": {
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "colors": [
+          "Indigo Blue"
+        ]
+      },
+      "cod_available": true,
+      "message": "Item 'Indigo Cotton Chikankari Kurta' is in stock (25 units available)."
+    }
+  },
+  {
+    "event_id": "evt_1788631546096",
+    "timestamp": "2026-09-05T18:05:46.096531+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "IDEMPOTENCY_GUARD",
+    "tool_name": "check_idempotency",
+    "reasoning": "Idempotency guard detected duplicate order attempt in 5 min window",
+    "status": "BLOCKED",
+    "inputs": {
+      "product_id": "P001",
+      "buyer_id": "buyer@agentic-commerce.ai"
+    },
+    "outputs": {
+      "passed": false,
+      "message": "Duplicate checkout detected for item P001. Please wait 25 seconds before re-ordering."
+    }
+  },
+  {
+    "event_id": "evt_1788631548180",
+    "timestamp": "2026-09-05T18:05:48.180603+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "QUERY",
+    "tool_name": "search_catalog",
+    "reasoning": "Agent executed catalog query for 'Buy Ceramic Coffee Mug Set of 2'. Found 1 matches.",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "query": "Buy Ceramic Coffee Mug Set of 2",
+      "max_results": 3
+    },
+    "outputs": {
+      "match_count": 1,
+      "top_matches": [
+        "Handmade Ceramic Coffee Mug Set of 2"
+      ]
+    }
+  },
+  {
+    "event_id": "evt_1788631548213",
+    "timestamp": "2026-09-05T18:05:48.213787+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "AVAILABILITY_CHECK",
+    "tool_name": "check_availability",
+    "reasoning": "Verified availability for Handmade Ceramic Coffee Mug Set of 2: False (Stock: 0)",
+    "status": "SUCCESS",
+    "inputs": {
+      "product_id": "P008"
+    },
+    "outputs": {
+      "product_id": "P008",
+      "name": "Handmade Ceramic Coffee Mug Set of 2",
+      "available": false,
+      "stock": 0,
+      "price": 699.0,
+      "variants": {
+        "sizes": [
+          "Set of 2"
+        ],
+        "colors": [
+          "Speckled Beige"
+        ]
+      },
+      "cod_available": true,
+      "message": "Item 'Handmade Ceramic Coffee Mug Set of 2' is currently out of stock."
+    }
+  },
+  {
+    "event_id": "evt_1788631548264",
+    "timestamp": "2026-09-05T18:05:48.264576+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "AGENT_DECISION",
+    "tool_name": "process_intent",
+    "reasoning": "Primary product out of stock. Agent handled failure mode gracefully.",
+    "status": "OUT_OF_STOCK_HANDLED",
+    "inputs": {
+      "intent": "Buy Ceramic Coffee Mug Set of 2",
+      "product_id": "P008"
+    },
+    "outputs": {
+      "out_of_stock": true,
+      "alternative": null
+    }
+  },
+  {
+    "event_id": "evt_1788631555738",
+    "timestamp": "2026-09-05T18:05:55.738224+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "QUERY",
+    "tool_name": "search_catalog",
+    "reasoning": "Agent executed catalog query for 'Order 2 Handloom Silk Sarees'. Found 1 matches.",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "query": "Order 2 Handloom Silk Sarees",
+      "max_results": 3
+    },
+    "outputs": {
+      "match_count": 1,
+      "top_matches": [
+        "Handloom Silk Saree with Blouse Piece"
+      ]
+    }
+  },
+  {
+    "event_id": "evt_1788631555772",
+    "timestamp": "2026-09-05T18:05:55.772381+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "AVAILABILITY_CHECK",
+    "tool_name": "check_availability",
+    "reasoning": "Verified availability for Handloom Silk Saree with Blouse Piece: True (Stock: 8)",
+    "status": "SUCCESS",
+    "inputs": {
+      "product_id": "P003"
+    },
+    "outputs": {
+      "product_id": "P003",
+      "name": "Handloom Silk Saree with Blouse Piece",
+      "available": true,
+      "stock": 8,
+      "price": 4999.0,
+      "variants": {
+        "sizes": [
+          "Free Size"
+        ],
+        "colors": [
+          "Emerald Green"
+        ]
+      },
+      "cod_available": false,
+      "message": "Item 'Handloom Silk Saree with Blouse Piece' is in stock (8 units available)."
+    }
+  },
+  {
+    "event_id": "evt_1788631555818",
+    "timestamp": "2026-09-05T18:05:55.818964+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "CHECKOUT",
+    "tool_name": "initiate_checkout",
+    "reasoning": "Initiated Razorpay test checkout for 1x Handloom Silk Saree with Blouse Piece = \u20b94999.00",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "product_id": "P003",
+      "quantity": 1,
+      "buyer_name": "AI Buyer",
+      "buyer_email": "buyer@agentic-commerce.ai"
+    },
+    "outputs": {
+      "order_id": "order_test_0889e253cb86",
+      "amount": 4999.0,
+      "payment_link": "https://checkout.razorpay.com/v1/checkout/test/order_test_0889e253cb86"
+    }
+  },
+  {
+    "event_id": "evt_1788631555850",
+    "timestamp": "2026-09-05T18:05:55.850510+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "ORDER_STATUS_POLL",
+    "tool_name": "get_order_status",
+    "reasoning": "Polled Razorpay order status for order_test_0889e253cb86: paid",
+    "status": "SUCCESS",
+    "inputs": {
+      "order_id": "order_test_0889e253cb86"
+    },
+    "outputs": {
+      "order_id": "order_test_0889e253cb86",
+      "status": "paid",
+      "amount_paid": 1299.0,
+      "paid": true,
+      "mode": "SIMULATED_TEST_CONFIRMATION"
+    }
+  },
+  {
+    "event_id": "evt_1788631565578",
+    "timestamp": "2026-09-05T18:06:05.578709+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "QUERY",
+    "tool_name": "search_catalog",
+    "reasoning": "Agent executed catalog query for 'Find wireless optical mouse under 1000 rupees COD available'. Found 3 matches.",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "query": "Find wireless optical mouse under 1000 rupees COD available",
+      "max_results": 3
+    },
+    "outputs": {
+      "match_count": 3,
+      "top_matches": [
+        "Ergonomic Wireless Optical Mouse",
+        "Stainless Steel Insulated Water Bottle 1L",
+        "Noise Cancelling Bluetooth Headphones"
+      ]
+    }
+  },
+  {
+    "event_id": "evt_1788631565588",
+    "timestamp": "2026-09-05T18:06:05.588491+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "AVAILABILITY_CHECK",
+    "tool_name": "check_availability",
+    "reasoning": "Verified availability for Ergonomic Wireless Optical Mouse: True (Stock: 50)",
+    "status": "SUCCESS",
+    "inputs": {
+      "product_id": "P004"
+    },
+    "outputs": {
+      "product_id": "P004",
+      "name": "Ergonomic Wireless Optical Mouse",
+      "available": true,
+      "stock": 50,
+      "price": 799.0,
+      "variants": {
+        "sizes": [
+          "N/A"
+        ],
+        "colors": [
+          "Matte Black"
+        ]
+      },
+      "cod_available": true,
+      "message": "Item 'Ergonomic Wireless Optical Mouse' is in stock (50 units available)."
+    }
+  },
+  {
+    "event_id": "evt_1788631565643",
+    "timestamp": "2026-09-05T18:06:05.643077+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "CHECKOUT",
+    "tool_name": "initiate_checkout",
+    "reasoning": "Initiated Razorpay test checkout for 1x Ergonomic Wireless Optical Mouse = \u20b9799.00",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "product_id": "P004",
+      "quantity": 1,
+      "buyer_name": "AI Buyer",
+      "buyer_email": "buyer@agentic-commerce.ai"
+    },
+    "outputs": {
+      "order_id": "order_test_c5d39760000b",
+      "amount": 799.0,
+      "payment_link": "https://checkout.razorpay.com/v1/checkout/test/order_test_c5d39760000b"
+    }
+  },
+  {
+    "event_id": "evt_1788631565664",
+    "timestamp": "2026-09-05T18:06:05.664271+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "ORDER_STATUS_POLL",
+    "tool_name": "get_order_status",
+    "reasoning": "Polled Razorpay order status for order_test_c5d39760000b: paid",
+    "status": "SUCCESS",
+    "inputs": {
+      "order_id": "order_test_c5d39760000b"
+    },
+    "outputs": {
+      "order_id": "order_test_c5d39760000b",
+      "status": "paid",
+      "amount_paid": 1299.0,
+      "paid": true,
+      "mode": "SIMULATED_TEST_CONFIRMATION"
+    }
+  },
+  {
+    "event_id": "evt_1788631592595",
+    "timestamp": "2026-09-05T18:06:32.595203+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "QUERY",
+    "tool_name": "search_catalog",
+    "reasoning": "Agent executed catalog query for 'Order 1 Indigo Cotton Chikankari Kurta for me'. Found 3 matches.",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "query": "Order 1 Indigo Cotton Chikankari Kurta for me",
+      "max_results": 3
+    },
+    "outputs": {
+      "match_count": 3,
+      "top_matches": [
+        "Indigo Cotton Chikankari Kurta",
+        "Stainless Steel Insulated Water Bottle 1L",
+        "Mechanical Gaming Keyboard RGB"
+      ]
+    }
+  },
+  {
+    "event_id": "evt_1788631592603",
+    "timestamp": "2026-09-05T18:06:32.603622+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "AVAILABILITY_CHECK",
+    "tool_name": "check_availability",
+    "reasoning": "Verified availability for Indigo Cotton Chikankari Kurta: True (Stock: 25)",
+    "status": "SUCCESS",
+    "inputs": {
+      "product_id": "P001"
+    },
+    "outputs": {
+      "product_id": "P001",
+      "name": "Indigo Cotton Chikankari Kurta",
+      "available": true,
+      "stock": 25,
+      "price": 1299.0,
+      "variants": {
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "colors": [
+          "Indigo Blue"
+        ]
+      },
+      "cod_available": true,
+      "message": "Item 'Indigo Cotton Chikankari Kurta' is in stock (25 units available)."
+    }
+  },
+  {
+    "event_id": "evt_1788631592630",
+    "timestamp": "2026-09-05T18:06:32.630791+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "CHECKOUT",
+    "tool_name": "initiate_checkout",
+    "reasoning": "Initiated Razorpay test checkout for 1x Indigo Cotton Chikankari Kurta = \u20b91299.00",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "product_id": "P001",
+      "quantity": 1,
+      "buyer_name": "AI Buyer",
+      "buyer_email": "test_buyer@agent.ai"
+    },
+    "outputs": {
+      "order_id": "order_test_a01548e305da",
+      "amount": 1299.0,
+      "payment_link": "https://checkout.razorpay.com/v1/checkout/test/order_test_a01548e305da"
+    }
+  },
+  {
+    "event_id": "evt_1788631592654",
+    "timestamp": "2026-09-05T18:06:32.654619+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "ORDER_STATUS_POLL",
+    "tool_name": "get_order_status",
+    "reasoning": "Polled Razorpay order status for order_test_a01548e305da: paid",
+    "status": "SUCCESS",
+    "inputs": {
+      "order_id": "order_test_a01548e305da"
+    },
+    "outputs": {
+      "order_id": "order_test_a01548e305da",
+      "status": "paid",
+      "amount_paid": 1299.0,
+      "paid": true,
+      "mode": "SIMULATED_TEST_CONFIRMATION"
+    }
+  },
+  {
+    "event_id": "evt_1788631592678",
+    "timestamp": "2026-09-05T18:06:32.678643+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "QUERY",
+    "tool_name": "search_catalog",
+    "reasoning": "Agent executed catalog query for 'Buy Ceramic Coffee Mug Set of 2'. Found 1 matches.",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "query": "Buy Ceramic Coffee Mug Set of 2",
+      "max_results": 3
+    },
+    "outputs": {
+      "match_count": 1,
+      "top_matches": [
+        "Handmade Ceramic Coffee Mug Set of 2"
+      ]
+    }
+  },
+  {
+    "event_id": "evt_1788631592704",
+    "timestamp": "2026-09-05T18:06:32.705004+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "AVAILABILITY_CHECK",
+    "tool_name": "check_availability",
+    "reasoning": "Verified availability for Handmade Ceramic Coffee Mug Set of 2: False (Stock: 0)",
+    "status": "SUCCESS",
+    "inputs": {
+      "product_id": "P008"
+    },
+    "outputs": {
+      "product_id": "P008",
+      "name": "Handmade Ceramic Coffee Mug Set of 2",
+      "available": false,
+      "stock": 0,
+      "price": 699.0,
+      "variants": {
+        "sizes": [
+          "Set of 2"
+        ],
+        "colors": [
+          "Speckled Beige"
+        ]
+      },
+      "cod_available": true,
+      "message": "Item 'Handmade Ceramic Coffee Mug Set of 2' is currently out of stock."
+    }
+  },
+  {
+    "event_id": "evt_1788631592726",
+    "timestamp": "2026-09-05T18:06:32.726304+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "AGENT_DECISION",
+    "tool_name": "process_intent",
+    "reasoning": "Primary product out of stock. Agent handled failure mode gracefully.",
+    "status": "OUT_OF_STOCK_HANDLED",
+    "inputs": {
+      "intent": "Buy Ceramic Coffee Mug Set of 2",
+      "product_id": "P008"
+    },
+    "outputs": {
+      "out_of_stock": true,
+      "alternative": null
+    }
+  },
+  {
+    "event_id": "evt_1788631592752",
+    "timestamp": "2026-09-05T18:06:32.752504+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "SPEND_GUARDRAIL",
+    "tool_name": "check_spend_limit",
+    "reasoning": "Total order value exceeds auto-approval spending cap",
+    "status": "BLOCKED",
+    "inputs": {
+      "amount": 4999.0,
+      "quantity": 2,
+      "total_value": 9998.0,
+      "cap": 5000.0
+    },
+    "outputs": {
+      "passed": false,
+      "message": "Order total \u20b99998.00 exceeds spend limit cap of \u20b95000.00. Human confirmation required."
+    }
+  },
+  {
+    "event_id": "evt_1788631592831",
+    "timestamp": "2026-09-05T18:06:32.831573+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "QUERY",
+    "tool_name": "search_catalog",
+    "reasoning": "Agent executed catalog query for 'headphones noise cancelling'. Found 1 matches.",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "query": "headphones noise cancelling",
+      "max_results": 3
+    },
+    "outputs": {
+      "match_count": 1,
+      "top_matches": [
+        "Noise Cancelling Bluetooth Headphones"
+      ]
+    }
+  },
+  {
+    "event_id": "evt_1788631592852",
+    "timestamp": "2026-09-05T18:06:32.852733+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "AVAILABILITY_CHECK",
+    "tool_name": "check_availability",
+    "reasoning": "Verified availability for Indigo Cotton Chikankari Kurta: True (Stock: 25)",
+    "status": "SUCCESS",
+    "inputs": {
+      "product_id": "P001"
+    },
+    "outputs": {
+      "product_id": "P001",
+      "name": "Indigo Cotton Chikankari Kurta",
+      "available": true,
+      "stock": 25,
+      "price": 1299.0,
+      "variants": {
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "colors": [
+          "Indigo Blue"
+        ]
+      },
+      "cod_available": true,
+      "message": "Item 'Indigo Cotton Chikankari Kurta' is in stock (25 units available)."
+    }
+  },
+  {
+    "event_id": "evt_1788631721421",
+    "timestamp": "2026-09-05T18:08:41.421288+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "QUERY",
+    "tool_name": "search_catalog",
+    "reasoning": "Agent executed catalog query for 'Buy a mechanical gaming keyboard'. Found 1 matches.",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "query": "Buy a mechanical gaming keyboard",
+      "max_results": 3
+    },
+    "outputs": {
+      "match_count": 1,
+      "top_matches": [
+        "Mechanical Gaming Keyboard RGB"
+      ]
+    }
+  },
+  {
+    "event_id": "evt_1788631721431",
+    "timestamp": "2026-09-05T18:08:41.431319+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "AVAILABILITY_CHECK",
+    "tool_name": "check_availability",
+    "reasoning": "Verified availability for Mechanical Gaming Keyboard RGB: True (Stock: 10)",
+    "status": "SUCCESS",
+    "inputs": {
+      "product_id": "P014"
+    },
+    "outputs": {
+      "product_id": "P014",
+      "name": "Mechanical Gaming Keyboard RGB",
+      "available": true,
+      "stock": 10,
+      "price": 2999.0,
+      "variants": {
+        "sizes": [
+          "N/A"
+        ],
+        "colors": [
+          "White RGB"
+        ]
+      },
+      "cod_available": true,
+      "message": "Item 'Mechanical Gaming Keyboard RGB' is in stock (10 units available)."
+    }
+  },
+  {
+    "event_id": "evt_1788631721466",
+    "timestamp": "2026-09-05T18:08:41.466292+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "CHECKOUT",
+    "tool_name": "initiate_checkout",
+    "reasoning": "Initiated Razorpay test checkout for 1x Mechanical Gaming Keyboard RGB = \u20b92999.00",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "product_id": "P014",
+      "quantity": 1,
+      "buyer_name": "AI Buyer",
+      "buyer_email": "buyer@agentic-commerce.ai"
+    },
+    "outputs": {
+      "order_id": "order_test_44d2b313acf2",
+      "amount": 2999.0,
+      "payment_link": "https://checkout.razorpay.com/v1/checkout/test/order_test_44d2b313acf2"
+    }
+  },
+  {
+    "event_id": "evt_1788631721488",
+    "timestamp": "2026-09-05T18:08:41.488953+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "ORDER_STATUS_POLL",
+    "tool_name": "get_order_status",
+    "reasoning": "Polled Razorpay order status for order_test_44d2b313acf2: paid",
+    "status": "SUCCESS",
+    "inputs": {
+      "order_id": "order_test_44d2b313acf2"
+    },
+    "outputs": {
+      "order_id": "order_test_44d2b313acf2",
+      "status": "paid",
+      "amount_paid": 1299.0,
+      "paid": true,
+      "mode": "SIMULATED_TEST_CONFIRMATION"
+    }
+  },
+  {
+    "event_id": "evt_1788631856716",
+    "timestamp": "2026-09-05T18:10:56.716713+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "QUERY",
+    "tool_name": "search_catalog",
+    "reasoning": "Agent executed catalog query for 'Get me cold pressed virgin coconut oil'. Found 3 matches.",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "query": "Get me cold pressed virgin coconut oil",
+      "max_results": 3
+    },
+    "outputs": {
+      "match_count": 3,
+      "top_matches": [
+        "Cold Pressed Virgin Coconut Oil 1L",
+        "Stainless Steel Insulated Water Bottle 1L",
+        "Mechanical Gaming Keyboard RGB"
+      ]
+    }
+  },
+  {
+    "event_id": "evt_1788631856735",
+    "timestamp": "2026-09-05T18:10:56.735237+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "AVAILABILITY_CHECK",
+    "tool_name": "check_availability",
+    "reasoning": "Verified availability for Cold Pressed Virgin Coconut Oil 1L: True (Stock: 45)",
+    "status": "SUCCESS",
+    "inputs": {
+      "product_id": "P013"
+    },
+    "outputs": {
+      "product_id": "P013",
+      "name": "Cold Pressed Virgin Coconut Oil 1L",
+      "available": true,
+      "stock": 45,
+      "price": 650.0,
+      "variants": {
+        "sizes": [
+          "1L"
+        ],
+        "colors": [
+          "Clear"
+        ]
+      },
+      "cod_available": true,
+      "message": "Item 'Cold Pressed Virgin Coconut Oil 1L' is in stock (45 units available)."
+    }
+  },
+  {
+    "event_id": "evt_1788631856792",
+    "timestamp": "2026-09-05T18:10:56.792709+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "CHECKOUT",
+    "tool_name": "initiate_checkout",
+    "reasoning": "Initiated Razorpay test checkout for 1x Cold Pressed Virgin Coconut Oil 1L = \u20b9650.00",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "product_id": "P013",
+      "quantity": 1,
+      "buyer_name": "AI Buyer",
+      "buyer_email": "buyer@agentic-commerce.ai"
+    },
+    "outputs": {
+      "order_id": "order_test_11163640b00e",
+      "amount": 650.0,
+      "payment_link": "/checkout/pay?order_id=order_test_11163640b00e&amount=650.0&product=Cold%20Pressed%20Virgin%20Coconut%20Oil%201L"
+    }
+  },
+  {
+    "event_id": "evt_1788631856821",
+    "timestamp": "2026-09-05T18:10:56.821381+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "ORDER_STATUS_POLL",
+    "tool_name": "get_order_status",
+    "reasoning": "Polled Razorpay order status for order_test_11163640b00e: paid",
+    "status": "SUCCESS",
+    "inputs": {
+      "order_id": "order_test_11163640b00e"
+    },
+    "outputs": {
+      "order_id": "order_test_11163640b00e",
+      "status": "paid",
+      "amount_paid": 1299.0,
+      "paid": true,
+      "mode": "SIMULATED_TEST_CONFIRMATION"
+    }
+  },
+  {
+    "event_id": "evt_1788631967025",
+    "timestamp": "2026-09-05T18:12:47.025223+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "QUERY",
+    "tool_name": "search_catalog",
+    "reasoning": "Agent executed catalog query for 'Order 1 Indigo Cotton Chikankari Kurta for me'. Found 3 matches.",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "query": "Order 1 Indigo Cotton Chikankari Kurta for me",
+      "max_results": 3
+    },
+    "outputs": {
+      "match_count": 3,
+      "top_matches": [
+        "Indigo Cotton Chikankari Kurta",
+        "Stainless Steel Insulated Water Bottle 1L",
+        "Mechanical Gaming Keyboard RGB"
+      ]
+    }
+  },
+  {
+    "event_id": "evt_1788631967038",
+    "timestamp": "2026-09-05T18:12:47.038025+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "AVAILABILITY_CHECK",
+    "tool_name": "check_availability",
+    "reasoning": "Verified availability for Indigo Cotton Chikankari Kurta: True (Stock: 25)",
+    "status": "SUCCESS",
+    "inputs": {
+      "product_id": "P001"
+    },
+    "outputs": {
+      "product_id": "P001",
+      "name": "Indigo Cotton Chikankari Kurta",
+      "available": true,
+      "stock": 25,
+      "price": 1299.0,
+      "variants": {
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "colors": [
+          "Indigo Blue"
+        ]
+      },
+      "cod_available": true,
+      "message": "Item 'Indigo Cotton Chikankari Kurta' is in stock (25 units available)."
+    }
+  },
+  {
+    "event_id": "evt_1788631967076",
+    "timestamp": "2026-09-05T18:12:47.076865+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "CHECKOUT",
+    "tool_name": "initiate_checkout",
+    "reasoning": "Initiated Razorpay test checkout for 1x Indigo Cotton Chikankari Kurta = \u20b91299.00",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "product_id": "P001",
+      "quantity": 1,
+      "buyer_name": "AI Buyer",
+      "buyer_email": "test_buyer@agent.ai"
+    },
+    "outputs": {
+      "order_id": "order_test_181a505abbda",
+      "amount": 1299.0,
+      "payment_link": "/checkout/pay?order_id=order_test_181a505abbda&amount=1299.0&product=Indigo%20Cotton%20Chikankari%20Kurta"
+    }
+  },
+  {
+    "event_id": "evt_1788631967104",
+    "timestamp": "2026-09-05T18:12:47.104287+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "ORDER_STATUS_POLL",
+    "tool_name": "get_order_status",
+    "reasoning": "Polled Razorpay order status for order_test_181a505abbda: paid",
+    "status": "SUCCESS",
+    "inputs": {
+      "order_id": "order_test_181a505abbda"
+    },
+    "outputs": {
+      "order_id": "order_test_181a505abbda",
+      "status": "paid",
+      "amount_paid": 1299.0,
+      "paid": true,
+      "mode": "SIMULATED_TEST_CONFIRMATION"
+    }
+  },
+  {
+    "event_id": "evt_1788631967145",
+    "timestamp": "2026-09-05T18:12:47.145517+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "QUERY",
+    "tool_name": "search_catalog",
+    "reasoning": "Agent executed catalog query for 'Buy Ceramic Coffee Mug Set of 2'. Found 1 matches.",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "query": "Buy Ceramic Coffee Mug Set of 2",
+      "max_results": 3
+    },
+    "outputs": {
+      "match_count": 1,
+      "top_matches": [
+        "Handmade Ceramic Coffee Mug Set of 2"
+      ]
+    }
+  },
+  {
+    "event_id": "evt_1788631967181",
+    "timestamp": "2026-09-05T18:12:47.181068+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "AVAILABILITY_CHECK",
+    "tool_name": "check_availability",
+    "reasoning": "Verified availability for Handmade Ceramic Coffee Mug Set of 2: False (Stock: 0)",
+    "status": "SUCCESS",
+    "inputs": {
+      "product_id": "P008"
+    },
+    "outputs": {
+      "product_id": "P008",
+      "name": "Handmade Ceramic Coffee Mug Set of 2",
+      "available": false,
+      "stock": 0,
+      "price": 699.0,
+      "variants": {
+        "sizes": [
+          "Set of 2"
+        ],
+        "colors": [
+          "Speckled Beige"
+        ]
+      },
+      "cod_available": true,
+      "message": "Item 'Handmade Ceramic Coffee Mug Set of 2' is currently out of stock."
+    }
+  },
+  {
+    "event_id": "evt_1788631967205",
+    "timestamp": "2026-09-05T18:12:47.205105+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "AGENT_DECISION",
+    "tool_name": "process_intent",
+    "reasoning": "Primary product out of stock. Agent handled failure mode gracefully.",
+    "status": "OUT_OF_STOCK_HANDLED",
+    "inputs": {
+      "intent": "Buy Ceramic Coffee Mug Set of 2",
+      "product_id": "P008"
+    },
+    "outputs": {
+      "out_of_stock": true,
+      "alternative": null
+    }
+  },
+  {
+    "event_id": "evt_1788631967234",
+    "timestamp": "2026-09-05T18:12:47.234213+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "SPEND_GUARDRAIL",
+    "tool_name": "check_spend_limit",
+    "reasoning": "Total order value exceeds auto-approval spending cap",
+    "status": "BLOCKED",
+    "inputs": {
+      "amount": 4999.0,
+      "quantity": 2,
+      "total_value": 9998.0,
+      "cap": 5000.0
+    },
+    "outputs": {
+      "passed": false,
+      "message": "Order total \u20b99998.00 exceeds spend limit cap of \u20b95000.00. Human confirmation required."
+    }
+  },
+  {
+    "event_id": "evt_1788631967313",
+    "timestamp": "2026-09-05T18:12:47.313630+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "QUERY",
+    "tool_name": "search_catalog",
+    "reasoning": "Agent executed catalog query for 'headphones noise cancelling'. Found 1 matches.",
+    "status": "SUCCESS",
+    "inputs": {
+      "merchant_id": "rzp_merchant_001",
+      "query": "headphones noise cancelling",
+      "max_results": 3
+    },
+    "outputs": {
+      "match_count": 1,
+      "top_matches": [
+        "Noise Cancelling Bluetooth Headphones"
+      ]
+    }
+  },
+  {
+    "event_id": "evt_1788631967334",
+    "timestamp": "2026-09-05T18:12:47.334409+00:00",
+    "merchant_id": "rzp_merchant_001",
+    "event_type": "AVAILABILITY_CHECK",
+    "tool_name": "check_availability",
+    "reasoning": "Verified availability for Indigo Cotton Chikankari Kurta: True (Stock: 25)",
+    "status": "SUCCESS",
+    "inputs": {
+      "product_id": "P001"
+    },
+    "outputs": {
+      "product_id": "P001",
+      "name": "Indigo Cotton Chikankari Kurta",
+      "available": true,
+      "stock": 25,
+      "price": 1299.0,
+      "variants": {
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "colors": [
+          "Indigo Blue"
+        ]
+      },
+      "cod_available": true,
+      "message": "Item 'Indigo Cotton Chikankari Kurta' is in stock (25 units available)."
+    }
+  }
+]
