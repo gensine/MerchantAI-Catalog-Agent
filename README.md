@@ -207,11 +207,8 @@ Accepts form field `intent="Order 1 Indigo Cotton Chikankari Kurta size M"` and 
 
 ## 📽️ Demo Video Script (5-Minute Walkthrough)
 
-1. **(0:00–0:30) Problem Statement:** Show a traditional merchant catalog in CSV/PDF format locked away from AI buyers.
-2. **(0:30–1:30) Ingestion Demo:** Run `ingest.py` on 50 products in 0.002s; inspect vector DB.
-3. **(1:30–3:00) Agentic Checkout:** Input natural language buyer intent in Web Dashboard → view live tool calls → click generated Razorpay test payment link.
-4. **(3:00–4:00) Edge Case Demo:** Trigger out-of-stock item purchase and spend limit cap block.
-5. **(4:00–5:00) Audit Trail:** Inspect structured JSON audit logs and wrap up.
+
+https://drive.google.com/file/d/1j1uXvzPSTu3lo1WsrYPA1EBWjiMvtBIP/view?usp=sharing
 
 ---
 
