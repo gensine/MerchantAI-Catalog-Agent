@@ -1,5 +1,5 @@
 # 🛍️ MerchantAI Catalog Agent
-### Razorpay AI Buildathon 2026 — Track 01: AI Growth & Agentic Commerce
+
 
 [![Python Version](https://img.shields.io/badge/Python-3.13-blue.svg)](https://python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green.svg)](https://fastapi.tiangolo.com)
@@ -211,5 +211,3 @@ Accepts form field `intent="Order 1 Indigo Cotton Chikankari Kurta size M"` and 
 https://drive.google.com/file/d/1j1uXvzPSTu3lo1WsrYPA1EBWjiMvtBIP/view?usp=sharing
 
 ---
-
-*Built for Razorpay AI Buildathon 2026 — Track 01: AI Growth & Agentic Commerce*
